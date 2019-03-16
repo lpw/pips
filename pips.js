@@ -1,4 +1,4 @@
-const regDie = [ ...Array(6).keys() ].reduce( ( a, k ) => ( { ...a, [ k ]: k + 1 } ), {} )
+// const regDie = [ ...Array(6).keys() ].reduce( ( a, k ) => ( { ...a, [ k ]: k + 1 } ), {} )
 // const myDie = {
 // 	'0': 0,
 // 	'1': 0,
@@ -7,13 +7,21 @@ const regDie = [ ...Array(6).keys() ].reduce( ( a, k ) => ( { ...a, [ k ]: k + 1
 // 	'4': 6,
 // 	'5': 7,
 // }
+const regDie = {
+	'0': 0,
+	'1': 0,
+	'2': 2,
+	'3': 6,
+	'4': 6,
+	'5': 7,
+}
 const myDie = {
 	'0': 0,
 	'1': 0,
-	'2': 0,
-	'3': 7,
-	'4': 7,
-	'5': 7,
+	'2': 3,
+	'3': 6,
+	'4': 6,
+	'5': 6,
 }
 
 const numPips = 21
